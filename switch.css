@@ -1,0 +1,59 @@
+label {
+  font-family: 'Gill sans', 'Gill sans MT';
+  background-color: #c9fffd;
+  display: block;
+  padding: 1.8em;
+  margin-bottom: 0.8em;
+  display: grid;
+  grid-column: 1fr auto;
+}
+
+.witches {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    width: 3.3em;
+    height: 1.4em;
+    border-radius: 1.8em;
+    background-color: #fafaaf;
+    outline: none;
+    transition: background-color .3s  linear;
+  }
+
+  .witches::after {
+    content: "";
+    position: relative;
+    background-color: #f2b172;
+    display: block;
+    width: 1.1em;
+    height: 1.07em;
+    border: .15em solid #b07064;
+    border-radius: 0.65em;
+    transition: left .3 ease-in-out;
+  }
+
+  .witches:checked{
+    background-color: #4287f5;
+  }
+
+  .witches:checked::after {
+    left: 2em;
+  }
+
+  .groter {
+    font-size: 1.5em
+  }
+
+  #alles {
+    display: grid;
+    position: fixed;
+    margin: 0px auto;
+  }
+
+  #vlakkie {
+    display: grid;
+    position: center;
+    margin: 0px auto;
+    margin-left: 250px;
+    max-width: 600px;
+  }
